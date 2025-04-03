@@ -30,4 +30,3 @@ class Genero {
         return $stmt;
     }
 }
-?>
