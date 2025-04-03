@@ -1,0 +1,32 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração de Filmes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Administração de Filmes</h1>
+        <button class="btn" onclick="openMovieForm()">Adicionar Filme</button>
+        <div id="movie-form" class="hidden">
+            <input type="text" id="title" placeholder="Título do Filme">
+            <textarea id="description" placeholder="Descrição"></textarea>
+            <input type="text" id="trailer" placeholder="Link do Trailer">
+            <input type="file" id="cover">
+            <button class="btn save" onclick="saveMovie()">Salvar</button>
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Gênero</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="movie-table"></tbody>
+        </table>
+    </div>
+    <script src="js/admin.js"></script>
+</body>
+</html>
