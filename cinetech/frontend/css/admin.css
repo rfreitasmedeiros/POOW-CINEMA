@@ -31,7 +31,7 @@ a {
     font-size: 20px;
 }
 a:hover {
-    text-decoration: underline;
+    text-shadow: red 2px 4px, blue -2px -4px;
 }
 
 main {
