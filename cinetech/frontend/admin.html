@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin - CineTech</title>
-    <link rel="stylesheet" href="styles/admin.css">
+    <link rel="stylesheet" href="css/admin.css">
 </head>
 <body>
     <header>
         <h1>Administração - CineTech</h1>
+        <a href="index.html">Voltar ao Catálogo</a>
     </header>
     
     <main>
-        <section id="cadastro-filme">
+        <form action="/cinetech/backend/models/Filme.php" method="POST" id="cadastro-filme">
             <h2>Cadastrar Filme</h2>
             <input type="text" id="titulo" placeholder="Título">
             <textarea id="descricao" placeholder="Descrição"></textarea>
@@ -20,17 +21,17 @@
             <input type="text" id="trailer" placeholder="URL do Trailer">
             <input type="date" id="data_lancamento">
             <input type="number" id="duracao" placeholder="Duração (min)">
-            <button onclick="cadastrarFilme()">Cadastrar</button>
-        </section>
+            <button onclick="create()">Cadastrar</button>
+        </form>
         
-        <section id="cadastro-genero">
+        <form action="/cinetech/backend/models/Genero.php" method="POST" id="cadastro-genero">
             <h2>Cadastrar Gênero</h2>
             <input type="text" id="nome-genero" placeholder="Nome do Gênero">
             <textarea id="descricao-genero" placeholder="Descrição (opcional)"></textarea>
-            <button onclick="cadastrarGenero()">Cadastrar</button>
-        </section>
+            <button onclick="create()">Cadastrar</button>
+        </form>
     </main>
     
-    <script src="scripts/admin.js"></script>
+    <script src="js/admin.js"></script>
 </body>
 </html>

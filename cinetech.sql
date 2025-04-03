@@ -1,13 +1,13 @@
-CREATE DATABASE cinetech;
+CREATE DATABASE IF NOT EXISTS cinetech;
 USE cinetech;
 
-CREATE TABLE genero (
+CREATE TABLE IF NOT EXISTS genero (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
     descricao TEXT
 );
 
-CREATE TABLE filme (
+CREATE TABLE IF NOT EXISTS filme (
     id INT AUTO_INCREMENT PRIMARY KEY,
     titulo VARCHAR(255) NOT NULL,
     descricao TEXT NOT NULL,
@@ -17,7 +17,7 @@ CREATE TABLE filme (
     duracao INT NOT NULL
 );
 
-CREATE TABLE filme_genero (
+CREATE TABLE IF NOT EXISTS filme_genero (
     filme_id INT,
     genero_id INT,
     PRIMARY KEY (filme_id, genero_id),
