@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - CineTech</title>
+    <link rel="stylesheet" href="styles/admin.css">
+</head>
+<body>
+    <header>
+        <h1>Administração - CineTech</h1>
+    </header>
+    
+    <main>
+        <section id="cadastro-filme">
+            <h2>Cadastrar Filme</h2>
+            <input type="text" id="titulo" placeholder="Título">
+            <textarea id="descricao" placeholder="Descrição"></textarea>
+            <input type="text" id="capa" placeholder="URL da Capa">
+            <input type="text" id="trailer" placeholder="URL do Trailer">
+            <input type="date" id="data_lancamento">
+            <input type="number" id="duracao" placeholder="Duração (min)">
+            <button onclick="cadastrarFilme()">Cadastrar</button>
+        </section>
+        
+        <section id="cadastro-genero">
+            <h2>Cadastrar Gênero</h2>
+            <input type="text" id="nome-genero" placeholder="Nome do Gênero">
+            <textarea id="descricao-genero" placeholder="Descrição (opcional)"></textarea>
+            <button onclick="cadastrarGenero()">Cadastrar</button>
+        </section>
+    </main>
+    
+    <script src="scripts/admin.js"></script>
+</body>
+</html>
