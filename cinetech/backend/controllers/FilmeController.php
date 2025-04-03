@@ -1,6 +1,6 @@
 <?php
-require_once '../config.php';
-require_once '../models/Filme.php';
+include("../config.php");
+include("../models/FIlme.php");
 
 $database = new Database();
 $db = $database->getConnection();

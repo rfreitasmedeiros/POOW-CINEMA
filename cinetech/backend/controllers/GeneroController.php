@@ -1,6 +1,6 @@
 <?php
-require_once '../config.php';
-require_once '../models/Genero.php';
+include("../config.php");
+include("../models/Genero.php");
 
 $database = new Database();
 $db = $database->getConnection();
